@@ -55,24 +55,24 @@ public class Main {
 
         //Adding everything together using
 
-        completeBillingAddress.append(fullName);
-        completeBillingAddress.append(billingStreet);
-        completeBillingAddress.append(billingCity);
-        completeBillingAddress.append(billingState);
-        completeBillingAddress.append(billingZipCode);
+        completeBillingAddress.append(fullName + "\n" + "\n");
+        completeBillingAddress.append("Billing Address:" + "\n" + billingStreet);
+        completeBillingAddress.append("\n" + billingCity + ", ");
+        completeBillingAddress.append(billingState + " ");
+        completeBillingAddress.append(billingZipCode + "\n" + "\n");
 
-        completeBillingAddress.append(shippingStreet);
-        completeBillingAddress.append(shippingCity);
-        completeBillingAddress.append(shippingState);
+        completeBillingAddress.append("Shipping Address: " + "\n" + shippingStreet);
+        completeBillingAddress.append("\n" + shippingCity + ", ");
+        completeBillingAddress.append(shippingState + " ");
         completeBillingAddress.append(shippingZipCode);
 
         //Next the complete Address Needs to be formatted.(might be easier if the string is split?)
         //Split the data into Billing portion and then Shipping portion
 
 
-//        String[] billingAndShippingSplit = completeBillingAddress.split("");
-//        String billingInfo = billingAndShippingSplit[0];
-//        String shippingInfo = billingAndShippingSplit[1];
+        //String[] billingAndShippingSplit = completeBillingAddress.split("");
+        //String billingInfo = billingAndShippingSplit[0];
+        //String shippingInfo = billingAndShippingSplit[1];
 
 
         System.out.println(completeBillingAddress);
